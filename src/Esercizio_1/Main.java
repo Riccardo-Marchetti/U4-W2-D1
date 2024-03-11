@@ -11,7 +11,7 @@ public class Main {
         int[] array = new int[5];
 
         for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(1 , 10);
+            array[i] = random.nextInt(1 , 11);
         }
         System.out.println(Arrays.toString(array));
 
