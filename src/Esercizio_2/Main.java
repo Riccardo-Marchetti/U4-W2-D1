@@ -6,8 +6,6 @@ public class Main {
     public static void main(String[] args){
 
         Scanner scanner = new Scanner(System.in);
-
-
         try {
             System.out.println("Quanti km hai percorso");
             double km = Double.parseDouble(scanner.nextLine());
@@ -17,7 +15,7 @@ public class Main {
                 throw new ArithmeticException ("non puoi dividere per 0");
             }
             double calcolo = km / litri;
-            System.out.println("Hai percorso " + calcolo  + " km/l" );
+            System.out.println("L'auto percorre " + calcolo + "km al litro" );
         } catch (ArithmeticException e) {
             System.out.println(e.getMessage());
         } catch (Exception e) {
