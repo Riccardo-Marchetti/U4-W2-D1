@@ -31,11 +31,16 @@ public class Main {
                 System.out.println("Digita un numero che vuoi inserire nell'array da (1 a 10)");
                 number = Integer.parseInt(scanner.nextLine());
 
+                if (number > 0 && number <= 10){
                 if (position > 0 && position <= 5){
                     array[position - 1 ] = number;
                     System.out.println(Arrays.toString(array));
                 } else {
                     System.out.println("Posizione non valida");
+                }
+                }else {
+                    System.out.println("Inserisci un numero compreso tra 1 a 10");
+                    System.out.println(Arrays.toString(array));
                 }
 
             } catch (NumberFormatException e) {
